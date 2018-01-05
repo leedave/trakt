@@ -1,0 +1,17 @@
+.infiniteScrollTable {
+    width: 99%;
+}
+
+.infiniteScrollTable th {
+    background-color: #ccc;
+    padding: 5px 10px;
+}
+
+.infiniteScrollTable .infiniteScrollTableHeaderLink {
+    display: block;
+    cursor: pointer;
+}
+
+.infiniteScrollTable thead input {
+    width: 70%;
+}

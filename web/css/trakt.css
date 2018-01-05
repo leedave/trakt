@@ -1,0 +1,237 @@
+.trakt-register-device {
+    margin-left: 15px;
+}
+img.trakt-avatar {
+    width: 200px;
+    border-radius: 50%;
+}
+.trakt-dashboard-links {
+    width: 109px;
+    padding: 20px;
+    background-color: #def;
+    min-height: 202px;
+}
+.trakt-dashboard-links a:hover {
+    background-color: #acd;
+}
+.trakt-dashboard-links a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    color: #666;
+}
+
+.trakt-user-details {
+    padding: 0px 10px 20px 10px;
+    font-weight: bold;
+    font-style: italic;
+    color: #666;
+    background-color: #def;
+}
+
+.trakt-search {
+    clear: both;
+    margin-top: 10px;
+    min-width: 631px;
+    margin: 0;
+}
+
+.trakt-search .searchResultDiv {
+    min-width: 640px;
+    max-height: 200px;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+.trakt-search .searchResultDiv table {
+    width: 100%;
+}
+
+.trakt-rating-number {
+    background-color: #ff0000;
+    color: #fff;
+    border-radius: 10px;
+    font-size: 80%;
+    padding: 3px;
+    display: inline-block;
+    min-width: 14px;
+    text-align: center;
+}
+
+.trakt-modal-detail {
+    position: relative;
+    margin: 50px auto;
+    width: 600px;
+    min-height: 300px;
+    max-height: 600px;
+    overflow-y: scroll;
+    border: 3px solid #666;
+    background-color: #fff;
+    padding: 10px;
+}
+
+.trakt-modal-detail .movie-art {
+    float: left;
+    margin-right: 10px;
+}
+.trakt-modal-detail .movie-art img {
+    max-width: 200px;
+    max-height: 250px;
+}
+
+
+.trakt-modal-detail img {
+    width: 100%;
+}
+.trakt-modal-detail-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    width: 100%;
+    min-height: 100%;
+}
+.trakt-modal-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    opacity: 0.9;
+    width: 100%;
+    min-height: 100%;
+}
+
+.tmdb-rating::after {
+    content: "/10";
+    font-weight: normal;
+}
+.tmdb-rating::before {
+    content: "TMDB ";
+    font-weight: normal;
+}
+.tvdb-rating::after {
+    content: "/10";
+    font-weight: normal;
+}
+.tvdb-rating::before {
+    content: "TVDB ";
+    font-weight: normal;
+}
+.tvdb-rating,
+.tmdb-rating {
+    background-color: #102229;
+    color: #00d272;
+    padding: 3px 15px;
+    font-weight: bold;
+    display: inline-block;
+    margin-bottom: 10px;
+}
+
+select {
+    background-color: #fff;
+    padding: 8px 12px;
+}
+
+.fa-file-excel path {
+    fill: #f00;
+}
+.fa-file-video path {
+    fill: #0b0;
+}
+.fa-eye-slash path {
+    fill: #999;
+}
+
+.fa-eye path {
+    fill: #0b0;
+}
+
+
+.trakt-collection-div,
+.trakt-watched-div,
+.trakt-rating-div {
+    background-color: #ff5555;
+    padding: 5px 10px;
+    margin-top: 10px;
+}
+
+.trakt-watched-div {
+    margin-top: 0;
+    background-color: #55aaff;
+}
+.trakt-rating-div .fa-heart path,
+.trakt-watched-div .fa-eye-slash path,
+.trakt-watched-div .fa-eye path {
+    fill: #fff;
+}
+
+.trakt-collection-div path {
+    fill: #000;
+}
+
+.trakt-collection-div {
+    margin-top: 0;
+    background-color: #ed0;
+}
+
+
+.trakt-show-seasons .seasonBlock .episodeBlock {
+    color: #f00;
+    display: inline-block;
+    padding: 3px 5px;
+    background-color: #e5e5e5;
+    font-size: 80%;
+    margin-bottom: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.trakt-show-seasons .seasonBlock .episodeBlock:hover {
+    background-color: #ccc;
+}
+
+.trakt-show-seasons .seasonBlock .episodeBlock.owned {
+    color: #00f;
+}
+.trakt-show-seasons .seasonBlock .episodeBlock.watched {
+    color: #0b0;
+}
+
+.trakt-show-seasons .seasonDiv {
+    display: block;
+    padding: 10px 5px 5px 5px;
+    border-bottom: 1px solid;
+    cursor: pointer;
+}
+.trakt-show-seasons .seasonDiv:hover {
+    background-color: #efefef;
+}
+
+.trakt-show-seasons .seasonDiv span.watched,
+.trakt-show-seasons .seasonDiv span.rated,
+.trakt-show-seasons .seasonDiv span.owned {
+    font-size: 80%;
+    display: inline-block;
+    margin-left: 20px;
+    color: #00f;
+}
+
+.trakt-show-seasons .seasonDiv span.watched {
+    color: #0b0;
+}
+
+.trakt-show-seasons .seasonDiv span.rated {
+    color: #f00;
+}
+
+.trakt-show-seasons .episodesDiv {
+    display: none;
+    padding: 10px;
+}
+
+
+
+a.movieRender {
+    display: block;
+    text-decoration: none;
+}
