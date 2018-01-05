@@ -1,0 +1,8 @@
+<div class="trakt-watched-div">
+    <form action="javascript:tModal.setMovieAsWatched({{$TRAKTID}})" method="post" id="modalWatched">
+        <input type="date" name="date" id="date" value="{{$DATE}}" />
+        <input type="time" name="time" id="time" value="{{$TIME}}" />
+        <button type="submit">Set as Watched</button>
+    </form>
+    <i class="far fa-eye-slash" /> Not Yet Watched
+</div>

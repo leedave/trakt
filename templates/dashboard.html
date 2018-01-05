@@ -1,0 +1,49 @@
+<div class="trakt-register-device">
+    <div class="trakt-user-details float-left">
+        <img class="trakt-avatar" src="{{$AVATARURL}}" alt="{{t:label.trakt.userName}}'s Avatar" />
+        <br />
+        {{$USERNAME}}
+    </div>
+    <div class='trakt-dashboard-links trakt-collection float-left'>
+        <h2>Collections</h2>
+        <a href="/trakt/collection/movies/">Movies</a>
+        <a href="/trakt/collection/shows/">TV Shows</a>
+    </div>
+    <div class='trakt-dashboard-links trakt-rating float-left'>
+        <h2>Ratings</h2>
+        <a href="/trakt/ratings/">Ratings</a>
+    </div>
+    <div class='trakt-dashboard-links trakt-watched float-left'>
+        <h2>Watched</h2>
+        <a href="/trakt/watched/movies/">Movies</a>
+        <a href="/trakt/watched/shows/">TV Shows</a>
+    </div>
+    <div class="trakt-dashboard-links trakt-search">
+        <h2>Search</h2>
+        <form action="javascript:searchForms[1].performSearch()" data-action="/trakt/search/" method="post" id="trakt-search-form" data-tableid="1">
+            <table>
+                <tr>
+                    <td><label for="searchType">Type</label></td>
+                    <td>
+                        <select name="searchType" id="searchType">
+                            <option value="movie">Movie</option>
+                            <option value="show">TV Show</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td><label for="searchName">Name</label></td>
+                    <td><input type="text" name="searchName" id="searchName"/></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <button type="submit">Search</button>
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <div class="searchResultDiv" id="searchResultDiv_1">
+            
+        </div>
+    </div>
+</div>

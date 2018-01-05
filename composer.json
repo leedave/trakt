@@ -1,0 +1,55 @@
+{
+    "name": "leedch/trakt",
+    "type": "library",
+    "description": "An Interface that connects with Trakt, TMDB and TVDB",
+    "keywords": [
+        "leedch",
+        "trakt",
+        "phpunit",
+        "tvdb",
+        "tmdb",
+        "scrobbler"
+    ],
+    "homepage": "https://github.com/leedave/trakt.git",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "David Lee",
+            "email": "leed@leed.ch",
+            "homepage": "https://www.leed.ch/",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php" : "~7.0|~7.1",
+        "GuzzleHttp/Guzzle": "^6.3",
+        "leedch/resource-mysql": "^1.0",
+        "leedch/logger": "^1.0",
+        "leedch/filehandler": "^1.0",
+        "leedch/infinitescroll": "^1.0",
+        "leedch/validator": "^1.0",
+        "leedch/convert": "^1.0",
+        "leedch/translate": "^1.0",
+        "leedch/router": "^1.0",
+        "leedch/view": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^6.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Leedch\\Trakt\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Leedch\\Trakt\\": "tests"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    }
+}
