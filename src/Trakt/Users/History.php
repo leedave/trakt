@@ -109,7 +109,7 @@ class History extends Mysql
         if ($recent) {
             $params = '?limit=30';
         }
-        $response = $this->connector->call('GET', 'users/'.$slug.'/history/'.$params, "", 10);
+        $response = $this->connector->call('GET', 'users/'.$slug.'/history/'.$params, "", 60);
         $responseCode = (int) $response->getStatusCode();
         if ($responseCode !== 200) {
             throw new Exception('Invalid response from Watched Data');

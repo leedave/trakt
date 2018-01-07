@@ -302,7 +302,7 @@ class Collection extends Mysql
         $settings->getUserSettings();
         $slug = $settings->getSlug();
         //$response = $this->connector->call('GET', '/users/'.$slug.'/collection/'.$type.'?extended=metadata', "", 10);
-        $response = $this->connector->call('GET', 'users/'.$slug.'/collection/'.$type, "", 10);
+        $response = $this->connector->call('GET', 'users/'.$slug.'/collection/'.$type, "", 60);
         $responseCode = (int) $response->getStatusCode();
         if ($responseCode !== 200) {
             throw new Exception('Invalid response from UserData');

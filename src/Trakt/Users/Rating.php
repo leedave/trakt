@@ -394,7 +394,7 @@ class Rating extends Mysql
         $settings = new Settings();
         $settings->getUserSettings();
         $slug = $settings->getSlug();
-        $response = $this->connector->call('GET', 'users/'.$slug.'/ratings/', "", 10);
+        $response = $this->connector->call('GET', 'users/'.$slug.'/ratings/', "", 60);
         $responseCode = (int) $response->getStatusCode();
         if ($responseCode !== 200) {
             throw new Exception('Invalid response from Ratings Data');
