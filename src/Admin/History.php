@@ -61,7 +61,7 @@ class History extends feHistory implements TableInterface
         $this->getTableAttributes();
         $content = $this->traitRenderTable();
         $contentExtended = H::div(
-                        H::a("Back", ["href" => "/trakt/"])
+                        H::a("Back", ["href" => "/trakt"])
                         . " "
                         . H::a("Refresh", ["href" => "/trakt/watched/refresh/"])
                     , ["class" => "infiniteScrollTableHeaderLinks"])

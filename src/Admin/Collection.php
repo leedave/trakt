@@ -61,7 +61,7 @@ class Collection extends feCollection implements TableInterface
     public function renderMoviesCollectionTable()
     {
         $content = H::div(
-                        H::a("Back", ["href" => "/trakt/"])
+                        H::a("Back", ["href" => "/trakt"])
                         . " "
                         . H::a("Refresh", ["href" => "/trakt/collection/refresh/movies/"])
                     , ["class" => "infiniteScrollTableHeaderLinks"])
