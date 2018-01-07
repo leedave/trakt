@@ -58,8 +58,12 @@ class Rating extends feRating implements TableInterface
     public function renderTable()
     {
         $content = $this->traitRenderTable();
-        $contentExtended = H::a("Refresh", ["href" => "/trakt/ratings/refresh/"])
-                    .H::br(2)
+        $contentExtended = H::div(
+                        H::a("Back", ["href" => "/trakt/"])
+                        . " "
+                        . H::a("Refresh", ["href" => "/trakt/ratings/refresh/"])
+                    , ["class" => "infiniteScrollTableHeaderLinks"])
+                    .H::br(1)
                     .$content;
         return $contentExtended;
     }
